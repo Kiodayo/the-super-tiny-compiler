@@ -139,7 +139,7 @@
  *
  * For the following syntax:
  *
- *   (add 2 (subtract 4 2))
+ *   
  *
  * Tokens might look something like this:
  *
@@ -1027,7 +1027,7 @@ function codeGenerator(node) {
 
 function compiler(input) {
   let tokens = tokenizer(input);
-  let ast    = parser(tokens);
+  let ast = parser(tokens);
   let newAst = transformer(ast);
   let output = codeGenerator(newAst);
 
